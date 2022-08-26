@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%
+}
+
+html, body {
+  font-size: 1.8rem;
+  
+}
+
+.container {
+  width: 50rem;
+
+  margin: 4rem auto;
+  padding: 3rem;
+
+  background-color: #1B1B1B;
+  color: #fff;
+
+  border-radius: 1.2rem;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#survey-form .txt-label {
+  margin-bottom: 1rem;
+}
+
+#survey-form input, select {
+  margin-bottom: 1.5rem;
+
+  padding: 1.3rem;
+
+  border-radius: 1.2rem;
+  border: none;
+  outline: none;
+}
+
+#survey-form p {
+  margin-bottom: 1rem;
+}
+
+#survey-form #comments {
+  padding: 1.3rem;
+  margin-bottom: 2rem;
+
+  border: none;
+  border-radius: 1.2rem;
+  outline: none;
+}
+
+#survey-form input[type=submit] {
+  background: #28B463;
+  color: #fff;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
