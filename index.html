@@ -5,122 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário de Pesquisa</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <h1>Formulário de Pesquisa sobre a Área de Tecnologia</h1>
+      <p>Desde já, agradeço sua colaboração! :)</p>
+    </header>
+
     <main class="container">
       <form id="survey-form">
         <div class="form-group">
-          <label for="name" class="txt-label">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required />
+          <label for="name" class="txt-label">Nome</label>
+          <input type="text" id="name" placeholder="Digite seu nome" required />
           <label for="email" class="txt-label">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" required />
-          <label for="age" class="txt-label">Age (optional)</label>
-          <input type="number" id="age" placeholder="Age" />
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite seu email"
+            required
+          />
+          <label for="age" class="txt-label">Idade (opcional)</label>
+          <input type="number" id="age" placeholder="Digite sua idade" />
         </div>
 
-        <p>Which option best describes your current role?</p>
-        <select name="current-role" id="current-role" required>
-          <option disabled selected value>Select current role</option>
-          <option value="student">Student</option>
-          <option value="full-time-job">Full Time Job</option>
-          <option value="full-time-learner">Full Time Learner</option>
-          <option value="prefer-not-to-say">Prefer not to say</option>
-          <option value="others">Others</option>
-        </select>
+        <div class="form-group">
+          <p>Qual opção melhor descreve sua ocupação hoje?</p>
+          <select name="current-occupation" id="current-occupation" required>
+            <option disabled selected value>Selecione sua ocupação</option>
+            <option value="student">Estudante</option>
+            <option value="full-time-job">Trabalho em tempo integral</option>
+            <option value="full-time-learner">Aprendiz em tempo integral</option>
+            <option value="prefer-not-to-say">Prefiro não dizer</option>
+            <option value="others">Outros</option>
+          </select>
+        </div>
 
-        <p>Would you recommend freeCodeCamp to a friend?</p>
-        <label for="Definitely">
-          <input type="radio" name="recommendation" id="Definitely" value="Definitely" checked />
-          Definitely
-        </label>
+        <div class="form-group">
+          <p>Você recomendaria a área de tecnologia para um amigo?</p>
+          <label for="Definitely">
+            <input
+              type="radio"
+              name="recommendation"
+              id="Definitely"
+              value="Definitely"
+              checked
+            />
+            Definitivamente
+          </label>
+          <label for="maybe">
+            <input type="radio" name="recommendation" id="maybe" value="Maybe" />
+            Talvez
+          </label>
+          <label for="not-sure">
+            <input
+              type="radio"
+              name="recommendation"
+              id="not-sure"
+              value="not-sure"
+            />
+            Não tenho certeza
+          </label>
+        </div>
 
-        <label for="maybe">
-          <input type="radio" name="recommendation" id="maybe" value="Maybe" />
-          Maybe
-        </label>
+        <div class="form-group">
+          <p>O que você mais gosta de fazer?</p>
+          <select name="most-like" id="most-like" required>
+            <option disabled selected value>Selecione uma opção</option>
+            <option value="study">Estudar</option>
+            <option value="challenges">Desafios</option>
+            <option value="projects">Projetos</option>
+            <option value="community">Participar de uma comunidade</option>
+            <option value="open-source">Open Source</option>
+            <option value="work">Trabalhar</option>
+          </select>
+        </div>
 
-        <label for="not-sure">
-          <input type="radio" name="recommendation" id="not-sure" value="not-sure" />
-          Not sure
-        </label>
+        <div class="form-group">
+          <p>
+            Das áreas de atuação que estão em alta, quais você mais se identifica?
+            <span>(Marque quantas quiser)</span>
+          </p>
+          <label for="front-end-developer">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="front-end-developer"
+              value="front-end-developer"
+            />
+            Desenvolvedor Front-end
+          </label>
+          <label for="back-end-developer">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="back-end-developer"
+              value="back-end-developer"
+            />
+            Desenvolvedor Back-end
+          </label>
+          <label for="web-developer">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="web-developer"
+              value="web-developer"
+            />
+            Desenvolvedor Web
+          </label>
+          <label for="mobile-developer">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="mobile-developer"
+              value="mobile-developer"
+            />
+            Desenvolvedor Mobile
+          </label>
+          <label for="database-administration">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="database-administration"
+              value="database-administration"
+            />
+            Administração de banco de dados
+          </label>
+          <label for="network-administration">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="network-administration"
+              value="network-administration"
+            />
+            Administração de redes
+          </label>
+          <label for="software-quality">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="software-quality"
+              value="software-quality"
+            />
+            Qualidade de software
+          </label>
+          <label for="cloud-computing-specialist">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="cloud-computing-specialist"
+              value="cloud-computing-specialist"
+            />
+            Especialista em Cloud Computing
+          </label>
+          <label for="infrastructure">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="infrastructure"
+              value="infrastructure"
+            />
+            Infraestrutura
+          </label>
+          <label for="data-science">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="data-science"
+              value="data-science"
+            />
+            Ciência de dados
+          </label>
+          <label for="information-security">
+            <input
+              type="checkbox"
+              name="prefer"
+              id="information-security"
+              value="information-security"
+            />
+            Segurança da Informação
+          </label>
+          <label for="devops">
+            <input type="checkbox" name="prefer" id="devops" value="devops" />
+            DevOps
+          </label>
+        </div>
 
-        <p>What is your favorite feature of freeCodeCamp?</p>
-        <select name="most-like" id="most-like" required>
-          <option disabled selected value>Select an option</option>
-          <option value="challenges">Challenges</option>
-          <option value="projects">Projects</option>
-          <option value="community">Community</option>
-          <option value="open-source">Open Source</option>
-        </select>
+        <div class="form-group">
+          <p>Algum comentário ou sugestão?</p>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="50"
+            rows="10"
+            placeholder="Digite aqui"
+          ></textarea>
+        </div>
 
-        <p>What would you like to see improved? (Check all that apply)</p>
-        <label for="front-end-projects">
-          <input type="checkbox" name="prefer" id="front-end-projects" value="front-end-projects" /> 
-          Front-end Projects
-        </label>
-
-        <label for="back-end-projects">
-          <input type="checkbox" name="prefer" id="back-end-projects" value="back-end-projects" /> 
-          Back-end Projects
-        </label>
-
-        <label for="data-visualization">
-          <input type="checkbox" name="prefer" id="data-visualization" value="data-visualization" /> 
-          Data Visualization
-        </label>
-
-        <label for="challenges">
-          <input type="checkbox" name="prefer" id="challenges" value="challenges" /> 
-          Challenges
-        </label>
-
-        <label for="open-source-community">
-          <input type="checkbox" name="prefer" id="open-source-community" value="open-source-community" /> 
-          Open Source Community
-        </label>
-
-        <label for="gitter-help-rooms">
-          <input type="checkbox" name="prefer" id="gitter-help-rooms" value="gitter-help-rooms" /> 
-          Gitter help rooms
-        </label>
-
-        <label for="videos">
-          <input type="checkbox" name="prefer" id="videos" value="videos" /> 
-          Videos
-        </label>
-
-        <label for="city-meetups">
-          <input type="checkbox" name="prefer" id="city-meetups" value="city-meetups" /> 
-          City Meetups
-        </label>
-
-        <label for="wiki">
-          <input type="checkbox" name="prefer" id="wiki" value="wiki" /> 
-          Wiki
-        </label>
-
-        <label for="forum">
-          <input type="checkbox" name="prefer" id="forum" value="forum" /> 
-          Forum
-        </label>
-
-        <label for="additional-courses">
-          <input type="checkbox" name="prefer" id="additional-courses" value="additional-courses" /> 
-          Additional Courses
-        </label>
-
-        <p>Any comments or suggestions?</p>
-        <textarea
-          name="comments"
-          id="comments"
-          cols="50"
-          rows="10"
-          placeholder="Enter your comment here"
-        ></textarea>
-
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Enviar" onclick="studyAlert()" />
       </form>
     </main>
+
+    <footer>
+      <p>by <a href="https://github.com/mateussdev" target="_blank">Mateus Silva</a></p>
+    </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

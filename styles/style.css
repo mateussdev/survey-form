@@ -9,8 +9,18 @@
 }
 
 html, body {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
-  
+}
+
+header {
+  text-align: center;
+
+  margin-top: 4rem;
+}
+
+header h1 {
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -28,6 +38,8 @@ html, body {
 #survey-form {
   display: flex;
   flex-direction: column;
+
+  font-weight: 400;
 }
 
 #survey-form .txt-label {
@@ -35,6 +47,9 @@ html, body {
 }
 
 #survey-form input, select {
+  background: #4b4b4b;
+  color: #ffffff;
+
   margin-bottom: 1.5rem;
 
   padding: 1.3rem;
@@ -55,6 +70,13 @@ html, body {
   border: none;
   border-radius: 1.2rem;
   outline: none;
+
+  background: #4b4b4b;
+  color: #ffffff;
+}
+
+#survey-form input::placeholder, textarea::placeholder {
+  color: #fff;
 }
 
 #survey-form input[type=submit] {
@@ -64,10 +86,35 @@ html, body {
   text-transform: uppercase;
 
   cursor: pointer;
+
+  transition: 300ms;
+}
+
+#survey-form input[type=submit]:hover {
+  opacity: 0.9;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 1.5rem;
 }
 
+footer {
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+footer p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000;
+  opacity: 0.9;
+}
+
+footer p a {
+  color: #000;
+  opacity: 0.9;
+}
